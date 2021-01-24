@@ -1,7 +1,19 @@
-- name: Adobe Photoshop
+- name: Embedded Software
   percentage: 95
   color: info
 
-- name: Adobe Illustrator
+- name: Mobile App Development
   percentage: 90
   color: success
+
+- name: Robotics
+  percentage: 90
+  color: green
+
+- name: IOT
+  percentage: 90
+  color: pink
+
+- name: Wireless Networking
+  percentage: 90
+  color: blue
