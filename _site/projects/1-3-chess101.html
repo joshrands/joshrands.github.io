@@ -89,6 +89,8 @@
 
 <p>To efficiently capture the board state, I used 8 slave Arduinos connected to a master Raspberry Pi through I2C. Each Arduino would sample the state of an entire row of 8 reed switches. The status was then encoded into an 8 bit integer and sent to the Raspberry Pi over I2C. The Raspberry Pi would compile the state of every reed switch from the Arduinos and have the current board state.</p>
 
+<p><img src="/images/chess-arduinos.JPG" alt="drawing" style="height:400px;" /></p>
+
 <p>I was then able to call on the Python chess library built by my peers to get a list of valid moves for a given piece. I would take this information and light up a 4x4 array of LEDs in a 64x64 LED matrix. This matrix was underneath the 3D printed chess frame that had 64 channels to direct the 8x8 LED arrays of light to a thin cover on the top.</p>
 
 <p><img src="/images/chess-grid.png" alt="drawing" style="height:400px;" /></p>
