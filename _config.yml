@@ -3,7 +3,7 @@ title               : Josh Rands
 description         : >
   Trying to make the world a better place through innovative technology.
   <br /><br />
-  :rocket::evergreen_tree::robot::fire::coffee:
+  :evergreen_tree::rocket::robot::fire::coffee:
 baseurl             : ""                     # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
 repository          : joshrands/joshrands.github.io # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
 remote_theme        : YoussefRaafatNasry/portfolYOU
