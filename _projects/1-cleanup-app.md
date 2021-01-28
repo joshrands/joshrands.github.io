@@ -7,6 +7,10 @@ description: Litter CleanUp mobile app live on the app store!
 
 # The Litter CleanUp App
 
+Role: Everything
+
+Duration: May 2020 - Present
+
 In May of 2020, I had the idea to make a crowd-sourced litter cleanup app. One month later I had taught myself how to develop full stack mobile apps using Google's Flutter app framework and Firebase backend. About 4 months later the Litter CleanUp app was live on the app store! 
 
 <center>
@@ -21,7 +25,7 @@ The app now has over 300 users who have collectively picked up over 15,000 piece
 {% include elements/button.html link="https://www.cleanplanetproject.org" text="Website" %}
 </center>
 <br>
-I like to split the development into 3 components: the mobile app, backend, and machine learning/litter verification. The next sections describe each component in a little more details, without getting too dry:zzz:
+I like to split the development into 3 components: the mobile app, backend, and machine learning/litter verification. The next sections describe each component in a little more detail, without getting too dry:zzz:
 
 ## Mobile Development
 
