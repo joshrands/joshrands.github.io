@@ -20,11 +20,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Josh Rands">
-  <meta property="og:description" content="Trying to make the world a better place through innovative technology.  Code:fire:, trees:evergreen_tree:, and coffee:coffee:">
+  <meta property="og:title" content="Distributed SLAM">
+  <meta property="og:description" content="Multi-robot SLAM using ROS, Gazebo, OpenCV, and more!">
 
-  <title>Josh Rands</title>
-  <meta name="description" content="Trying to make the world a better place through innovative technology.  Code:fire:, trees:evergreen_tree:, and coffee:coffee:">
+  <title>Distributed SLAM</title>
+  <meta name="description" content="Multi-robot SLAM using ROS, Gazebo, OpenCV, and more!">
 
   
   <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
@@ -56,7 +56,7 @@
   </button>
 
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    <div class="navbar-nav ml-auto"><a class="nav-item nav-link " href="/projects/">Projects</a>
+    <div class="navbar-nav ml-auto"><a class="nav-item nav-link active" href="/projects/">Projects</a>
 
       <a class="nav-item nav-link " href="/blog/">Blog</a>
 
@@ -68,23 +68,43 @@
   </div>
 
 </nav>
-  <div class="row justify-content-center align-items-center p-4">
-  <div class="col-lg-4 col-md-6 text-center mt-4">
+  <div class="col-lg-10 mx-auto mt-5 post">
+  <h1 id="distributed-slam">Distributed SLAM</h1>
 
-    <!-- Fine Circle Responsive Image -->
-    <div id="container" class="my-2">
-      <div id="dummy"></div>
-      <div id="element">
-        <img src="josh-tree.png" alt="Josh Rands" class="circle-image wow animated zoomIn" data-wow-delay=".1s" />
-      </div>
-    </div>
+<p>Role: ROS relative positioning</p>
 
-    <p class="text-muted wow animated slideInUp" data-wow-delay=".15s">Trying to make the world a better place through innovative technology. <br /><br /> Code:fire:, trees:evergreen_tree:, and coffee:coffee:
-</p>
+<p>Duration: Jan 2020 - May 2020</p>
 
-  </div>
+<p>Code:</p>
+<ul>
+  <li><a href="https://github.com/joshrands/relative_pos">relative_pos</a></li>
+  <li><a href="https://github.com/zsmeton/SwarmExploration">SwarmExploration</a></li>
+</ul>
+
+<p>Final demo video:</p>
+
+<video width="900" controls="">
+  <source src="/videos/multi-loc-demo.mp4" type="video/mp4" />
+</video>
+
+<h2 id="project-overview">Project Overview</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Convert Single Aruco to Robot Frame</th>
+      <th style="text-align: center">Outfit ROS Robot with Arucos</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><img src="/images/camera-and-aruco.png" alt="" /></td>
+      <td style="text-align: center"><img src="/images/robot-with-arucos.png" alt="" /></td>
+    </tr>
+  </tbody>
+</table>
+
 </div>
-
   </main>
 
   <footer class="mt-auto py-3 text-center">

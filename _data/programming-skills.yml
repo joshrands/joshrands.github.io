@@ -1,11 +1,27 @@
-- name: C/C++
+- name: C
+  percentage: 70
+  color: primary
+
+- name: C++
   percentage: 90
   color: danger
 
 - name: Python
-  percentage: 80
-  color:
+  percentage: 70
+  color: warning
 
 - name: Dart
   percentage: 70
+  color: info
+
+- name: Javascript
+  percentage: 40
   color: dark
+
+- name: Bash Scripting
+  percentage: 50
+  color: success
+
+- name: SQL
+  percentage: 40
+  color: secondary

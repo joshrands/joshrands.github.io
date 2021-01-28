@@ -20,11 +20,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Josh Rands">
-  <meta property="og:description" content="Trying to make the world a better place through innovative technology.  Code:fire:, trees:evergreen_tree:, and coffee:coffee:">
+  <meta property="og:title" content="Robot Swarm Networking">
+  <meta property="og:description" content="Distributed networking, drones, and lots of code!">
 
-  <title>Josh Rands</title>
-  <meta name="description" content="Trying to make the world a better place through innovative technology.  Code:fire:, trees:evergreen_tree:, and coffee:coffee:">
+  <title>Robot Swarm Networking</title>
+  <meta name="description" content="Distributed networking, drones, and lots of code!">
 
   
   <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
@@ -56,7 +56,7 @@
   </button>
 
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    <div class="navbar-nav ml-auto"><a class="nav-item nav-link " href="/projects/">Projects</a>
+    <div class="navbar-nav ml-auto"><a class="nav-item nav-link active" href="/projects/">Projects</a>
 
       <a class="nav-item nav-link " href="/blog/">Blog</a>
 
@@ -68,23 +68,51 @@
   </div>
 
 </nav>
-  <div class="row justify-content-center align-items-center p-4">
-  <div class="col-lg-4 col-md-6 text-center mt-4">
+  <div class="col-lg-10 mx-auto mt-5 post">
+  <h1 id="robot-swarm-networking">Robot Swarm Networking</h1>
 
-    <!-- Fine Circle Responsive Image -->
-    <div id="container" class="my-2">
-      <div id="dummy"></div>
-      <div id="element">
-        <img src="josh-tree.png" alt="Josh Rands" class="circle-image wow animated zoomIn" data-wow-delay=".1s" />
-      </div>
-    </div>
+<p>Role: Project Lead</p>
 
-    <p class="text-muted wow animated slideInUp" data-wow-delay=".15s">Trying to make the world a better place through innovative technology. <br /><br /> Code:fire:, trees:evergreen_tree:, and coffee:coffee:
-</p>
+<p>Duration: August 2018 - May 2020</p>
 
-  </div>
+<p>Code: <a href="https://github.com/joshrands/adhoc-routing-framework">adhoc-routing-framework</a></p>
+
+<p>Research Publication: <a href="https://par.nsf.gov/servlets/purl/10182345">Regression-based Network Monitoring in Swarm Robotic
+Systems</a></p>
+
+<p>Awards/Honors:</p>
+<ul>
+  <li>Outstanding Undergraduate Researcher Award</li>
+  <li>Mines Undergraduate Research Fellowship
+<br /></li>
+</ul>
+
+<video controls="">
+  <source src="/videos/adhoc-networking.mp4" type="video/mp4" />
+</video>
+
+<h2 id="project-overview">Project Overview</h2>
+
+<p>I invented a network monitoring algorithm that reduces bandwidth by predicting network metrics between mobile nodes. Robot swarms often have to operate in dynamic environments with limited onboard resources. Unnecessary network communication is costly both in consuming network bandwidth and battery power. My novel network monitoring algorithm uses historical data to predict future data when possible, cutting network monitoring overhead by 50% with no loss in network performance.</p>
+
+<p>The second phase of the project involved building a physical testbed. The goal was to take an off the shelf ad-hoc routing algorithm (AODV) and adapt it to use network monitoring information from REM. The routing would be performed on Raspberry Pis mounted to drones. We were able to successful perform multi-hoc adhoc routing using multiple Raspberry Pis. Unfortunately we never ran the project on the full drone swarm testbed as our time was cut short because of the COVID-19 pandemic.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Novel Network Monitoring</th>
+      <th style="text-align: center">Drone Swarm Physical Testbed</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><img src="/images/rem-overview.png" alt="" /></td>
+      <td style="text-align: center"><img src="/images/drone.png" alt="" /></td>
+    </tr>
+  </tbody>
+</table>
+
 </div>
-
   </main>
 
   <footer class="mt-auto py-3 text-center">

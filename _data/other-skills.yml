@@ -1,19 +1,31 @@
 - name: Embedded Software
-  percentage: 95
+  percentage: 90
   color: info
 
 - name: Mobile App Development
-  percentage: 90
+  percentage: 80
   color: success
 
 - name: Robotics
-  percentage: 90
-  color: green
+  percentage: 70
+  color: secondary
 
 - name: IOT
-  percentage: 90
-  color: pink
+  percentage: 50
+  color: danger
 
-- name: Wireless Networking
-  percentage: 90
-  color: blue
+- name: Wireless (WiFi, Xbee)
+  percentage: 70
+  color: warning
+
+- name: Serial 
+  percentage: 60
+  color: dark
+
+- name: Linux
+  percentage: 85
+  color: muted
+
+- name: Firebase
+  percentage: 65
+  color: danger
