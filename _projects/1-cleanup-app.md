@@ -33,14 +33,13 @@ The main point of the app is to take pictures of litter and submit them to our d
 
 Take pictures of litter   |  Submit them to earn points!
 :-------------------------:|:-------------------------:
-![screenshot](/images/cleanup-litter.PNG)  |  ![screenshot](/images/cleanup-confetti.PNG)
+<img src="/images/cleanup-litter.PNG" alt="drawing" style="width:300px"/> | <img src="/images/cleanup-confetti.PNG" alt="drawing" style="width:300px"/>
 
 We've also built in fun features such as discounts from eco-friendly companies and badges!
 
 Work towards cool badges!   |  Earn discounts on eco-friendly brands!
 :-------------------------:|:-------------------------:
-![screenshot](/images/cleanup-badges.PNG)  |  ![screenshot](/images/cleanup-rewards.PNG)
-
+<img src="/images/cleanup-badges.PNG" alt="drawing" style="width:300px"/> | <img src="/images/cleanup-rewards.PNG" alt="drawing" style="width:300px"/>
 
 ## Backend
 
