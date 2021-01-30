@@ -1,5 +1,5 @@
 - name: C
-  percentage: 70
+  percentage: 75
   color: primary
 
 - name: C++
@@ -15,7 +15,7 @@
   color: info
 
 - name: Javascript
-  percentage: 40
+  percentage: 35
   color: dark
 
 - name: Bash Scripting

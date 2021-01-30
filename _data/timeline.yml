@@ -1,24 +1,24 @@
 - title: Firmware Engineer, Trimble Autonomous Solutions
-  from: 2019
+  from: May 2019
   to: present
-  description: AVs and such
+  description: I am currently a Firmware Engineer on the controls team at Trimble Autonomous Solutions. My job consists of developing and improving control systems for offroad vehicles (tractors, compactors, sprayers, etc.), integrating controls with other teams such as perception, and integrating our system with new vehicles. I have been heavily involved in taking multiple ideas all the way to fully-functional field implementations.
 
 - title: Founder, Clean Planet Project Co.
-  from: 2020
+  from: Jun 2020
   to: present
-  description: Cleaning litter and such
+  description: I am a co-founder and CTO at Clean Planet Project Co. I have single handedly created a crowd-sourced litter cleanup framework that rewards individuals for picking up litter through the Litter CleanUp mobile app.
 
 - title: Distributed Networking Researcher, PeCS Lab
-  from: 2018
-  to: 2020
-  description: Drone swarms and such
+  from: Aug 2018
+  to: May 2020
+  description:  I was an undergraduate researcher in the PeCS Lab for 2 years. I did my Honors Thesis on a regression-based network monitoring algorithm my Junior year. In my senior year, we took my network monitoring algorithm, coupled it with a distributed routing protocol, and started writing firmware for a drone swarm physical testbed.
 
 - title: Software Engineering Intern, The Aerospace Corporation
-  from: 2018
-  to: 2018
-  description: Aerospace and such
+  from: Jun 2018
+  to: Aug 2018
+  description: As a software engineering intern at The Aerospace Corporation I contributed to a variety of projects related to mission success. I worked on projects involved in launch support, space systems decision making, and telemetry analysis. I improved my skills programming in C++ and Java and learned web development.
 
 - title: Student, Colorado School of Mines CS
-  from: 2016
-  to: 2020
-  description: School and such
+  from: Aug 2016
+  to: May 2020
+  description: I got an honors undergraduate degree in Computer Science at Colorado School of Mines in May 2020. I graduate with highest honors and a 3.98 GPA. I also recevied the Outstanding Undergraduate Researcher Award, was President of the Club Basketball Team, and won 5 hackathons/innovation competitions during my time at CSM.
