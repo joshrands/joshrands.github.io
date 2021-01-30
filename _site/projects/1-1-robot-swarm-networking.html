@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+
+<!--
+  portfolYOU Jekyll theme by Youssef Raafat
+  Free for personal and commercial use under the MIT license
+  https://github.com/YoussefRaafatNasry/portfolYOU
+-->
+
+<html lang="en" class="h-100">
+
+<head>
+
+  
+  
+
+  
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Robot Swarm Networking">
+  <meta property="og:description" content="Distributed network monitoring/routing, drones, simulations, and more!">
+
+  <title>Robot Swarm Networking</title>
+  <meta name="description" content="Distributed network monitoring/routing, drones, simulations, and more!">
+
+  
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.0/css/all.css">
+
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+  <!-- Animate CSS CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css" type="text/css"/>
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/assets/css/style.css" type="text/css">
+
+</head>
+
+
+<body class="d-flex flex-column h-100">
+
+  <main class="flex-shrink-0 container mt-5">
+  <nav class="navbar navbar-expand-lg navbar-light">
+
+  <a class="navbar-brand" href="/"><h5><b>Josh Rands</b></h5></a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav ml-auto"><a class="nav-item nav-link active" href="/projects/">Projects</a>
+
+      <a class="nav-item nav-link " href="/blog/">Blog</a>
+
+      <a class="nav-item nav-link " href="/about/">About</a>
+
+      
+
+    </div>
+  </div>
+
+</nav>
+  <div class="col-lg-10 mx-auto mt-5 post">
+  <h1 id="robot-swarm-networking">Robot Swarm Networking</h1>
+
+<p>Role: Project Lead</p>
+
+<p>Duration: August 2018 - May 2020</p>
+
+<p>Code: <a href="https://github.com/joshrands/adhoc-routing-framework">adhoc-routing-framework</a></p>
+
+<p>Research Publication: <a href="https://par.nsf.gov/servlets/purl/10182345">Regression-based Network Monitoring in Swarm Robotic
+Systems</a></p>
+
+<p>Awards/Honors:</p>
+<ul>
+  <li>Outstanding Undergraduate Researcher Award</li>
+  <li>Mines Undergraduate Research Fellowship
+<br /></li>
+</ul>
+
+<video controls="">
+  <source src="/videos/adhoc-networking.mp4" type="video/mp4" />
+</video>
+
+<h2 id="project-overview">Project Overview</h2>
+
+<p>I invented a network monitoring algorithm that reduces bandwidth by predicting network metrics between mobile nodes. Robot swarms often have to operate in dynamic environments with limited onboard resources. Unnecessary network communication is costly both in consuming network bandwidth and battery power. My novel network monitoring algorithm uses historical data to predict future data when possible, cutting network monitoring overhead by 50% with no loss in network performance.</p>
+
+<p>The second phase of the project involved building a physical testbed. The goal was to take an off the shelf ad-hoc routing algorithm (AODV) and adapt it to use network monitoring information from REM. The routing would be performed on Raspberry Pis mounted to drones. We were able to successful perform multi-hoc adhoc routing using multiple Raspberry Pis. Unfortunately we never ran the project on the full drone swarm testbed as our time was cut short because of the COVID-19 pandemic.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Novel Network Monitoring</th>
+      <th style="text-align: center">Drone Swarm Physical Testbed</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><img src="/images/rem-overview.png" alt="" /></td>
+      <td style="text-align: center"><img src="/images/drone.png" alt="" /></td>
+    </tr>
+  </tbody>
+</table>
+
+</div>
+  </main>
+
+  <footer class="mt-auto py-3 text-center">
+
+  <small class="text-muted mb-2">
+    <i class="fas fa-code"></i> with <i class="fas fa-heart"></i>
+    by <strong>Josh Rands</strong>
+  </small>
+
+  <div class="container-fluid justify-content-center"><a class="social mx-1"  href="mailto:joshrands1@gmail.com"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#db4437'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fas fa-envelope fa-1x"></i>
+    </a><a class="social mx-1"  href="https://www.github.com/joshrands"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#333333'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fab fa-github fa-1x"></i>
+    </a><a class="social mx-1"  href="https://www.linkedin.com/in/joshrands"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#007bb5'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fab fa-linkedin-in fa-1x"></i>
+    </a>
+
+</div><small id="attribution">
+    theme <a href="https://github.com/YoussefRaafatNasry/portfolYOU">portfolYOU</a>
+  </small>
+  
+</footer>
+  
+  <!-- GitHub Buttons -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+<!-- jQuery CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper.js CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+
+<!-- Bootstrap JS CDN -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<!-- wow.js CDN & Activation -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+<script> new WOW().init(); </script>
+
+<!-- Initialize all tooltips -->
+<script>
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
+
+</body>
+
+</html>

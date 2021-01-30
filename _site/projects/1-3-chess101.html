@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<!--
+  portfolYOU Jekyll theme by Youssef Raafat
+  Free for personal and commercial use under the MIT license
+  https://github.com/YoussefRaafatNasry/portfolYOU
+-->
+
+<html lang="en" class="h-100">
+
+<head>
+
+  
+  
+
+  
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Chess101">
+  <meta property="og:description" content="Chessboard that teaches you how to play chess by lighting up tiles!">
+
+  <title>Chess101</title>
+  <meta name="description" content="Chessboard that teaches you how to play chess by lighting up tiles!">
+
+  
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.0/css/all.css">
+
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+  <!-- Animate CSS CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css" type="text/css"/>
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/assets/css/style.css" type="text/css">
+
+</head>
+
+
+<body class="d-flex flex-column h-100">
+
+  <main class="flex-shrink-0 container mt-5">
+  <nav class="navbar navbar-expand-lg navbar-light">
+
+  <a class="navbar-brand" href="/"><h5><b>Josh Rands</b></h5></a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav ml-auto"><a class="nav-item nav-link active" href="/projects/">Projects</a>
+
+      <a class="nav-item nav-link " href="/blog/">Blog</a>
+
+      <a class="nav-item nav-link " href="/about/">About</a>
+
+      
+
+    </div>
+  </div>
+
+</nav>
+  <div class="col-lg-10 mx-auto mt-5 post">
+  <h1 id="chess101">Chess101</h1>
+
+<p>Role: System Architecture &amp; Sensor Integration</p>
+
+<p>Duration: March 2018 - May 2018</p>
+
+<p>Code: <a href="https://github.com/joshrands/Chess101">Chess101</a></p>
+
+<h1 id="project-overview">Project Overview</h1>
+
+<p>Chess101 was done as a final project for a python-based computing course I took Sophomore year of college. The goal was to create a chessboard that would light up valid moves when you picked up a piece. We ended up taking it a step further and allowing you to play against an AI. The AI would light up which piece it wanted to move, and then the location it wanted to move it.</p>
+
+<p><img src="/images/chess-move.png" alt="drawing" style="height:400px;" /></p>
+
+<p>My role in the project was getting sensor data and building the board state. Each chess piece had a magnet in the bottom, and each location on the chessboard had a reed switch. This allowed us to capture the location of each piece, and keep track of them as they moved.</p>
+
+<p><img src="/images/chess-reed-switches.png" alt="drawing" style="height:400px;" /></p>
+
+<p>To efficiently capture the board state, I used 8 slave Arduinos connected to a master Raspberry Pi through I2C. Each Arduino would sample the state of an entire row of 8 reed switches. The status was then encoded into an 8 bit integer and sent to the Raspberry Pi over I2C. The Raspberry Pi would compile the state of every reed switch from the Arduinos and have the current board state.</p>
+
+<p><img src="/images/chess-arduinos.JPG" alt="drawing" style="height:400px;" /></p>
+
+<p>I was then able to call on the Python chess library built by my peers to get a list of valid moves for a given piece. I would take this information and light up a 4x4 array of LEDs in a 64x64 LED matrix. This matrix was underneath the 3D printed chess frame that had 64 channels to direct the 8x8 LED arrays of light to a thin cover on the top.</p>
+
+<p><img src="/images/chess-grid.png" alt="drawing" style="height:400px;" /></p>
+
+<p>Overall this project was a massive success, and super fun! We demonstrated at the CSM Computation Fair and had many students play against the AI.</p>
+
+<p><img src="/images/chess-fair.png" alt="drawing" style="height:400px;" /></p>
+
+</div>
+  </main>
+
+  <footer class="mt-auto py-3 text-center">
+
+  <small class="text-muted mb-2">
+    <i class="fas fa-code"></i> with <i class="fas fa-heart"></i>
+    by <strong>Josh Rands</strong>
+  </small>
+
+  <div class="container-fluid justify-content-center"><a class="social mx-1"  href="mailto:joshrands1@gmail.com"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#db4437'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fas fa-envelope fa-1x"></i>
+    </a><a class="social mx-1"  href="https://www.github.com/joshrands"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#333333'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fab fa-github fa-1x"></i>
+    </a><a class="social mx-1"  href="https://www.linkedin.com/in/joshrands"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#007bb5'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fab fa-linkedin-in fa-1x"></i>
+    </a>
+
+</div><small id="attribution">
+    theme <a href="https://github.com/YoussefRaafatNasry/portfolYOU">portfolYOU</a>
+  </small>
+  
+</footer>
+  
+  <!-- GitHub Buttons -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+<!-- jQuery CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper.js CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+
+<!-- Bootstrap JS CDN -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<!-- wow.js CDN & Activation -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+<script> new WOW().init(); </script>
+
+<!-- Initialize all tooltips -->
+<script>
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
+
+</body>
+
+</html>

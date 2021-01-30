@@ -20,11 +20,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Litter CleanUp App">
-  <meta property="og:description" content="Litter CleanUp mobile app live on the app store!">
+  <meta property="og:title" content="Litter CleanUp">
+  <meta property="og:description" content="Crowd-source litter cleanup system including mobile app, litter recognition computer vision, and more!">
 
-  <title>Litter CleanUp App</title>
-  <meta name="description" content="Litter CleanUp mobile app live on the app store!">
+  <title>Litter CleanUp</title>
+  <meta name="description" content="Crowd-source litter cleanup system including mobile app, litter recognition computer vision, and more!">
 
   
   <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
@@ -56,17 +56,12 @@
   </button>
 
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    <div class="navbar-nav ml-auto"><a class="nav-item nav-link active" href="/projects/">Projects</a>
+    <div class="navbar-nav ml-auto">
+<a class="nav-item nav-link active" href="/projects/">Projects</a>
 
       <a class="nav-item nav-link " href="/blog/">Blog</a>
 
       <a class="nav-item nav-link " href="/about/">About</a>
-
-      <a class="nav-item nav-link " href="/elements/">Elements</a>
-
-      <a class="nav-item nav-link " href="/docs/">Docs</a>
-
-      <a class="nav-item nav-link " href="https://github.com/YoussefRaafatNasry/portfolYOU"><i class="fab fa-1x fa-github"></i></a>
 
       
 
@@ -77,35 +72,75 @@
   <div class="col-lg-10 mx-auto mt-5 post">
   <h1 id="the-litter-cleanup-app">The Litter CleanUp App</h1>
 
-<p>Some descriptive text…</p>
+<p>Role: Everything</p>
+
+<p>Duration: May 2020 - Present</p>
+
+<p>In May of 2020, I had the idea to make a crowd-sourced litter cleanup app. One month later I had taught myself how to develop full stack mobile apps using Google’s Flutter app framework and Firebase backend. About 4 months later the Litter CleanUp app was live on the app store!</p>
+
+<center>
+<a class="m-1 btn btn-outline-primary btn-2 " href="https://apps.apple.com/us/app/litter-cleanup/id1514864481">
+  Get iOS App
+</a>
+
+<a class="m-1 btn btn-outline-primary btn-2 " href="https://play.google.com/store/apps/details?id=com.joshrands.togethearth">
+  Get Android App
+</a>
+</center>
+<p><br>
+The app now has over 300 users who have collectively picked up over 15,000 pieces of litter. Checkout the Clean Planet Project website!!!</p>
+
+<center>
+<a class="m-1 btn btn-outline-primary btn-2 " href="https://www.cleanplanetproject.org">
+  Website
+</a>
+</center>
+<p><br>
+I like to split the development into 3 components: the mobile app, backend, and machine learning/litter verification. The next sections describe each component in a little more detail, without getting too dry<img class="emoji" title=":zzz:" alt=":zzz:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4a4.png" height="20" width="20"></p>
 
 <h2 id="mobile-development">Mobile Development</h2>
 
-<p class="text-center">
-<a class="m-1 btn btn-outline-primary btn-2 " href="https://github.com/YoussefRaafatNasry/portfolYOU">
-  Learn More
-</a>
-</p>
+<p>The main point of the app is to take pictures of litter and submit them to our database.</p>
 
-<h2 id="automated-litter-approval">Automated Litter Approval</h2>
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Take pictures of litter</th>
+      <th style="text-align: center">Submit them to earn points!</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><img src="/images/cleanup-litter.PNG" alt="screenshot"></td>
+      <td style="text-align: center"><img src="/images/cleanup-confetti.PNG" alt="screenshot"></td>
+    </tr>
+  </tbody>
+</table>
 
-<h3 id="machine-learning">Machine Learning</h3>
+<p>We’ve also built in fun features such as discounts from eco-friendly companies and badges!</p>
 
-<p class="text-center">
-<a class="m-1 btn btn-outline-primary btn-2 " href="https://github.com/YoussefRaafatNasry/portfolYOU">
-  Learn More
-</a>
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Work towards cool badges!</th>
+      <th style="text-align: center">Earn discounts on eco-friendly brands!</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><img src="/images/cleanup-badges.PNG" alt="screenshot"></td>
+      <td style="text-align: center"><img src="/images/cleanup-rewards.PNG" alt="screenshot"></td>
+    </tr>
+  </tbody>
+</table>
 
-</p>
+<h2 id="backend">Backend</h2>
 
-<h3 id="aws-lambda">AWS Lambda</h3>
+<p>The backend for the mobile app is Firebase. We use schemaless NoSQL database for storing user data, submission details, and more. We have a simple storage bucket for storing litter submission images for classification.</p>
 
-<p class="text-center">
-<a class="m-1 btn btn-outline-primary btn-2 " href="https://github.com/YoussefRaafatNasry/portfolYOU">
-  Learn More
-</a>
+<h2 id="automated-litter-verification">Automated Litter Verification</h2>
 
-</p>
+<p>We are currently training a neural network to automatically verify valid litter submissions. This is being done in Python using a CNN in Tensorflow. The first step was to leverage the current litter submissions to create a massive hybrid real-synthetic dataset of valid and invalid litter submissions. Once complete, we started training the CNN. We are currently at 95% accuracy on our training data (which includes real submissions) and are working on the architecture to automatically verify images submitted through the app.</p>
 
 </div>
   </main>
@@ -117,24 +152,17 @@
     by <strong>Josh Rands</strong>
   </small>
 
-  <div class="container-fluid justify-content-center"><a class="social mx-1"  href="mailto:joshrands1@gmail.com"
-       style="color: #6c757d"
-       onMouseOver="this.style.color='#db4437'"
-       onMouseOut="this.style.color='#6c757d'">
+  <div class="container-fluid justify-content-center">
+<a class="social mx-1" href="mailto:joshrands1@gmail.com" style="color: #6c757d" onmouseover="this.style.color='#db4437'" onmouseout="this.style.color='#6c757d'">
       <i class="fas fa-envelope fa-1x"></i>
-    </a><a class="social mx-1"  href="https://www.github.com/joshrands"
-       style="color: #6c757d"
-       onMouseOver="this.style.color='#333333'"
-       onMouseOut="this.style.color='#6c757d'">
+    </a><a class="social mx-1" href="https://www.github.com/joshrands" style="color: #6c757d" onmouseover="this.style.color='#333333'" onmouseout="this.style.color='#6c757d'">
       <i class="fab fa-github fa-1x"></i>
-    </a><a class="social mx-1"  href="https://www.linkedin.com/in/joshrands"
-       style="color: #6c757d"
-       onMouseOver="this.style.color='#007bb5'"
-       onMouseOut="this.style.color='#6c757d'">
+    </a><a class="social mx-1" href="https://www.linkedin.com/in/joshrands" style="color: #6c757d" onmouseover="this.style.color='#007bb5'" onmouseout="this.style.color='#6c757d'">
       <i class="fab fa-linkedin-in fa-1x"></i>
     </a>
 
-</div><small id="attribution">
+</div>
+<small id="attribution">
     theme <a href="https://github.com/YoussefRaafatNasry/portfolYOU">portfolYOU</a>
   </small>
   
